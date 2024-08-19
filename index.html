@@ -2,32 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea House</title>
-    <!-- Google font cdn -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <!-- Fontawesome cdn -->
-    <script src="https://kit.fontawesome.com/0a41f7dbfa.js" crossorigin="anonymous"></script>
-    <!-- Tailwind cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea House</title>
+  <!-- Google font cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- Fontawesome cdn -->
+  <script src="https://kit.fontawesome.com/0a41f7dbfa.js" crossorigin="anonymous"></script>
+  <!-- Tailwind cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           }
         }
-      </script>
+      }
+    }
+  </script>
 </head>
 
 <body>
-
+  <!-- main content -->
+  <main class="max-w-screen-xl mx-auto px-8 md:px-28">
+    <!-- header section -->
+    <header class=" flex-col md:flex pt-10 mb-20">
+      <!-- text content -->
+      <div class="mb-10">
+        <h1 class="text-5xl md:7xl">It's good <br>
+          tea time at The <br> Tea House</h1>
+        <br>
+        <p class="text-gray-500 w-3/4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste
+          Buds.</p>
+        <br>
+        <button
+          class="bg-gradient-to-r from-[#FF0000] to-[#FF8938] text-white px-5 py-3 rounded-xl font-bold text-xl">Explore
+          More <img class="inline" src="images/arrow.png" alt="Arrow picture coming"></button>
+      </div>
+      <!-- Image content -->
+      <div class="relative">
+        <!-- image -->
+        <div>
+          <img class="w-full" src="images/banner.png" alt="Banner picture coming">
+        </div>
+        <div class="absolute flex items-center bg-white shadow-lg px-2 py-2 md:px-10 lg:py-4 rounded-lg top-40 mt-12 ml-4 md:top-40 md:mt-32 md:left-20 lg:left-28">
+          <div><i class="fa-solid fa-star text-2xl text-amber-500"></i></div>
+          <div class="ml-2">
+            <h2 class="lg:text-2xl font-bold">5.00</h2>
+            <p class="text-gray-500">Trust Pilot Ratings</p>
+          </div>
+        </div>
+      </div>
+    </header>
+  </main>
 </body>
 
 </html>
